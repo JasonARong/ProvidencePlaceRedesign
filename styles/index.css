@@ -74,10 +74,12 @@ img, picture, video, canvas, svg { display: block;
 
 h1{
     font-size: 30px;
+    font-size: 1.875rem;
     font-family: 'CormorantSC', serif;
 }
 h2{
     font-size: 34px;
+    font-size: 2.125rem;
     font-family: 'CormorantSC', serif;
     line-height: 106%;
     margin-bottom: var(--smallGap);
@@ -85,6 +87,7 @@ h2{
 }
 h3{
     font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'CormorantSC', serif;
     margin-bottom: 4px;
     color: var(--subHeaderColor);
@@ -92,12 +95,14 @@ h3{
 }
 h4{
     font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: var(--smallGap);
     font-family: 'Lato', sans-serif;
 }
 p{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
+    font-size: 0.875rem;
 }
 
 ul{
@@ -633,15 +638,19 @@ footer{
 screen and (max-height: 480px){    
     h1{
         font-size: 24px;
+        font-size: 1.5rem;
     }
     h2{
         font-size: 28px;
+        font-size: 1.75rem;
     }
     h3{
         font-size: 16px;
+        font-size: 1rem;
     }
     h4{
         font-size: 14px;
+        font-size: 0.875rem;
     }
 
     /* disable desktop nav */

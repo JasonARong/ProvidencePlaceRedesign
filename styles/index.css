@@ -261,6 +261,7 @@ h1 a{
 /* ----- Header ------ */
 #headerImg{
     max-height: 660px;
+    min-height: 440px;
     width: 100%;
     object-fit: cover;
 }
@@ -466,8 +467,11 @@ main section{
     align-items: center;
     margin-bottom: 0;
 
-    height: 800px;
+    height: 1000px;
     background-color: black;
+
+    /* position: relative; */
+    overflow: hidden;
 }
 #imageShowcase h2{
     color: white;
@@ -476,9 +480,26 @@ main section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: var(--smallGap);
+}
+
+.image {
+    width: 100px;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: opacity 0.3s ease;
+}
+
+.image[data-status="inactive"] {    
+    opacity: 0;
+}
+
+.image[data-status="active"] {    
+    opacity: 100%;
 }
 
 
+/* division Line */
 #divisionLine{
     padding: var(--mediumGap) var(--smallGap);
     background-color: #000;
